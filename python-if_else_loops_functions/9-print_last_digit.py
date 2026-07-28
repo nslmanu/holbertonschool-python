@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
-def uppercase(str):
-    for var in str:
-        if ord(var) >= 97 and ord(var) <= 122:
-            var = chr(ord(var) - 32)
-        print("{}".format(var), end="")
-    print("")
+def print_last_digit(number):
+    last = abs(number) % 10
+    print("{}".format(last), end="")
+    return last
+
