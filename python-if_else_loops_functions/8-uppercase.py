@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-def uppercase(var):
-	if 97 <= ord(var) <= 122:
-        	resultat += chr(ord(var) - 32)
-    	else:
-		resultat += var
-
+def uppercase(str):
+    for var in str:
+        if ord(var) >= 97 and ord(var) <= 122:
+            var = chr(ord(var) - 32)
+        print("{}".format(var), end="")
+    print("")
